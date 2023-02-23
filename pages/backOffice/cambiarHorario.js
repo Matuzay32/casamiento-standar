@@ -6,33 +6,33 @@ import swal from "sweetalert";
 import { obtenerTokenYRol } from "../../constantes/tokenLogica";
 
 export default function cambiarHorario() {
-	const [tokenRol, setTokenRol] = useState();
+	// const [tokenRol, setTokenRol] = useState();
 
-	useEffect(() => {
-		obtenerTokenYRol().then((x) => {
-			setTokenRol(x);
-			console.log(x);
-			if (!x) {
-				swal({
-					title: "Error",
-					text: "Tiene que ser administrador para poder acceder",
-					icon: "error",
-				});
-			}
-			if (x?.rol === "USER") {
-				swal({
-					title: "Error",
-					text: "Tiene que ser administrador para poder acceder",
-					icon: "error",
-				});
-			}
-		});
-		return () => {};
-	}, []);
+	// useEffect(() => {
+	// 	obtenerTokenYRol().then((x) => {
+	// 		setTokenRol(x);
+	// 		console.log(x);
+	// 		if (!x) {
+	// 			swal({
+	// 				title: "Error",
+	// 				text: "Tiene que ser administrador para poder acceder",
+	// 				icon: "error",
+	// 			});
+	// 		}
+	// 		if (x?.rol === "USER") {
+	// 			swal({
+	// 				title: "Error",
+	// 				text: "Tiene que ser administrador para poder acceder",
+	// 				icon: "error",
+	// 			});
+	// 		}
+	// 	});
+	// 	return () => {};
+	// }, []);
 
 	return (
 		<>
-			{tokenRol && tokenRol.rol === "ADMIN" && tokenRol.token && (
+			{/* {tokenRol && tokenRol.rol === "ADMIN" && tokenRol.token && (
 				<Box
 					// backgroundImage="linear-gradient(wheat, #FF8C00, black)"
 					backgroundSize={"cover"}
@@ -51,8 +51,9 @@ export default function cambiarHorario() {
 						></HeroBackOffice>
 					</Box>
 					<CambiarHorario></CambiarHorario>
-				</Box>
-			)}
+				</Box> */}
+			{/* )} */}
+			<Box>Box</Box>
 		</>
 	);
 }
