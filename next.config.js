@@ -1,5 +1,4 @@
 const nextConfig = {
-	reactStrictMode: true,
 	ignoreBuildErrors: true,
 };
 
