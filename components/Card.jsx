@@ -18,6 +18,11 @@ import {
 } from "@chakra-ui/react";
 
 export default function Card(props) {
+	const cardBg = useColorModeValue("white", "gray.800");
+	const buttonBg = useColorModeValue(
+		"#151f21",
+		"gray.900"
+	);
 	const {
 		evento,
 		fecha,
@@ -39,7 +44,7 @@ export default function Card(props) {
 			<Box
 				maxW={"270px"}
 				w={"full"}
-				bg={useColorModeValue("white", "gray.800")}
+				bg={cardBg}
 				boxShadow={"2xl"}
 				rounded={"md"}
 				overflow={"hidden"}>
@@ -96,10 +101,7 @@ export default function Card(props) {
 							href={href}
 							w={"full"}
 							mt={8}
-							bg={useColorModeValue(
-								"#151f21",
-								"gray.900"
-							)}
+							bg={buttonBg}
 							color={"white"}
 							rounded={"2xl"}
 							_hover={{
