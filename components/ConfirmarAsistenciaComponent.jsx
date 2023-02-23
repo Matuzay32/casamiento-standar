@@ -46,7 +46,10 @@ export default function ConfirmarAsistenciaComponent() {
 	// console.log(router);
 	const { push } = router;
 	const [modalContent, setModalContent] = useState("");
-	const patterFill = useColorModeValue("white", "brand.300");
+	const patterFill = useColorModeValue(
+		"white",
+		"brand.300"
+	);
 
 	const refForm = useRef();
 
@@ -93,40 +96,44 @@ export default function ConfirmarAsistenciaComponent() {
 			position={"relative"}
 			w={"full"}
 			h={"auto"}
-			// backgroundSize={"cover"}
-			// backgroundPosition={"25% 50%"}
-			// backgroundImage={
-			// 	"url(https://images.unsplash.com/photo-1536599424071-0b215a388ba7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80)"
-			// }
+			backgroundSize={"cover"}
+			backgroundPosition={"25% 50%"}
+			backgroundImage={
+				"url(https://images.unsplash.com/photo-1536599424071-0b215a388ba7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80)"
+			}
 			pattern={"architect"}
 			patternFill={patterFill}
 			patOpacity={0.5}
 			bgColor={300}
-			as={Box}
-		>
+			as={Box}>
 			<Container
 				as={SimpleGrid}
 				maxW={"7xl"}
 				columns={{ base: 1, md: 2 }}
 				spacing={{ base: 10, lg: 32 }}
-				py={{ base: 10, sm: 20, lg: 32 }}
-			>
+				py={{ base: 10, sm: 20, lg: 32 }}>
 				<Stack spacing={{ base: 10, md: 20 }}>
 					<Heading
 						color={1900}
 						lineHeight={1.1}
-						fontSize={{ base: "3xl", sm: "4xl", md: "5xl", lg: "6xl" }}
-					></Heading>
+						fontSize={{
+							base: "3xl",
+							sm: "4xl",
+							md: "5xl",
+							lg: "6xl",
+						}}></Heading>
 
-					<Stack direction={"row"} spacing={4} align={"center"}></Stack>
+					<Stack
+						direction={"row"}
+						spacing={4}
+						align={"center"}></Stack>
 				</Stack>
 				<Stack
 					bg={"gray.50"}
 					rounded={"xl"}
 					p={{ base: 4, sm: 6, md: 8 }}
 					spacing={{ base: 8 }}
-					maxW={{ lg: "lg" }}
-				>
+					maxW={{ lg: "lg" }}>
 					<Stack spacing={4}>
 						<Heading
 							fontSize={"4xl"}
@@ -135,15 +142,22 @@ export default function ConfirmarAsistenciaComponent() {
 							fontFamily={"body"}
 							width={"100%"}
 							mb={"1rem"}
-							borderBottomWidth={{ base: "2px", md: "2px" }}
+							borderBottomWidth={{
+								base: "2px",
+								md: "2px",
+							}}
 							lineHeight={1.1}
 							// fontSize={{ base: "2xl", sm: "3xl", md: "4xl" }}
 						>
 							Confirmar Asistencia
 						</Heading>
-						<Text color={"gray.500"} fontSize={{ base: "sm", sm: "md" }}>
-							Te pedimos que por favor confirmes la asistencia, esto nos va a
-							ayudar a organizar mejor tanto la fiesta como la ceremonia
+						<Text
+							color={"gray.500"}
+							fontSize={{ base: "sm", sm: "md" }}>
+							Te pedimos que por favor confirmes la
+							asistencia, esto nos va a ayudar a
+							organizar mejor tanto la fiesta como la
+							ceremonia
 						</Text>
 					</Stack>
 					<Box as={"form"} mt={10} ref={refForm}>
@@ -157,8 +171,7 @@ export default function ConfirmarAsistenciaComponent() {
 								fontFamily={"body"}
 								width={"100%"}
 								mb={"1rem"}
-								lineHeight={1.1}
-							>
+								lineHeight={1.1}>
 								Cantidad
 							</FormLabel>
 							<Input
@@ -180,8 +193,7 @@ export default function ConfirmarAsistenciaComponent() {
 								fontFamily={"body"}
 								width={"100%"}
 								mb={"1rem"}
-								lineHeight={1.1}
-							>
+								lineHeight={1.1}>
 								Nombre
 							</FormLabel>
 							<Input
@@ -202,8 +214,7 @@ export default function ConfirmarAsistenciaComponent() {
 								fontFamily={"body"}
 								width={"100%"}
 								mb={"1rem"}
-								lineHeight={1.1}
-							>
+								lineHeight={1.1}>
 								Apellido
 							</FormLabel>
 							<Input
@@ -223,15 +234,17 @@ export default function ConfirmarAsistenciaComponent() {
 								onClick={(e) => handleSumbit(e)}
 								w={"full"}
 								mt={8}
-								bg={useColorModeValue("#151f21", "gray.900")}
+								bg={useColorModeValue(
+									"#151f21",
+									"gray.900"
+								)}
 								color={"white"}
 								rounded={"2xl"}
 								_hover={{
 									transform: "translateY(-2px)",
 									boxShadow: "lg",
 									backgroundColor: "#d5b063",
-								}}
-							>
+								}}>
 								Sugerir
 							</Button>
 						</Stack>

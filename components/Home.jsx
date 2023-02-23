@@ -36,7 +36,7 @@ export default function Home() {
 	const [fotoCentral, setFotoCentral] = useState(
 		"images/fotoCentral.jpeg"
 	);
-	const [posY, setPosY] = useState();
+	const [posY, setPosY] = useState("50%");
 	const patterFill = useColorModeValue("100", "brand.300");
 
 	useEffect(() => {

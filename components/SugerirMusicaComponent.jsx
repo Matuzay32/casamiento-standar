@@ -42,7 +42,10 @@ import { creandoLinkSpotify } from "../constantes/spotify";
 import swal from "sweetalert";
 
 export default function SugerirMusicaComponent() {
-	const patterFill = useColorModeValue("white", "brand.300");
+	const patterFill = useColorModeValue(
+		"white",
+		"brand.300"
+	);
 
 	const router = useRouter();
 	const { push } = router;
@@ -90,40 +93,44 @@ export default function SugerirMusicaComponent() {
 			position={"relative"}
 			w={"full"}
 			h={"auto"}
-			// backgroundSize={"cover"}
-			// backgroundPosition={"25% 50%"}
-			// backgroundImage={
-			// 	"url(https://images.unsplash.com/photo-1535185384036-28bbc8035f28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80)"
-			// }
+			backgroundSize={"cover"}
+			backgroundPosition={"25% 50%"}
+			backgroundImage={
+				"url(https://images.unsplash.com/photo-1535185384036-28bbc8035f28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80)"
+			}
 			pattern={"architect"}
 			patternFill={patterFill}
 			patOpacity={0.5}
 			bgColor={300}
-			as={Box}
-		>
+			as={Box}>
 			<Container
 				as={SimpleGrid}
 				maxW={"7xl"}
 				columns={{ base: 1, md: 2 }}
 				spacing={{ base: 10, lg: 32 }}
-				py={{ base: 10, sm: 20, lg: 32 }}
-			>
+				py={{ base: 10, sm: 20, lg: 32 }}>
 				<Stack spacing={{ base: 10, md: 20 }}>
 					<Heading
 						color={1900}
 						lineHeight={1.1}
-						fontSize={{ base: "3xl", sm: "4xl", md: "5xl", lg: "6xl" }}
-					></Heading>
+						fontSize={{
+							base: "3xl",
+							sm: "4xl",
+							md: "5xl",
+							lg: "6xl",
+						}}></Heading>
 
-					<Stack direction={"row"} spacing={4} align={"center"}></Stack>
+					<Stack
+						direction={"row"}
+						spacing={4}
+						align={"center"}></Stack>
 				</Stack>
 				<Stack
 					bg={"gray.50"}
 					rounded={"xl"}
 					p={{ base: 4, sm: 6, md: 8 }}
 					spacing={{ base: 8 }}
-					maxW={{ lg: "lg" }}
-				>
+					maxW={{ lg: "lg" }}>
 					<Stack spacing={4}>
 						<Heading
 							fontSize={"4xl"}
@@ -132,15 +139,21 @@ export default function SugerirMusicaComponent() {
 							fontFamily={"body"}
 							width={"100%"}
 							mb={"1rem"}
-							borderBottomWidth={{ base: "2px", md: "2px" }}
+							borderBottomWidth={{
+								base: "2px",
+								md: "2px",
+							}}
 							lineHeight={1.1}
 							// fontSize={{ base: "2xl", sm: "3xl", md: "4xl" }}
 						>
 							Música
 						</Heading>
-						<Text color={"gray.500"} fontSize={{ base: "sm", sm: "md" }}>
-							Sugerinos que musica te gustaria, puede ser con el link de
-							spotify. Armemos la play list juntos
+						<Text
+							color={"gray.500"}
+							fontSize={{ base: "sm", sm: "md" }}>
+							Sugerinos que musica te gustaria, puede
+							ser con el link de spotify. Armemos la
+							play list juntos
 						</Text>
 					</Stack>
 					<Box as={"form"} mt={10} ref={refForm}>
@@ -154,8 +167,7 @@ export default function SugerirMusicaComponent() {
 								fontFamily={"body"}
 								width={"100%"}
 								mb={"1rem"}
-								lineHeight={1.1}
-							>
+								lineHeight={1.1}>
 								Link de la cancion{" "}
 							</FormLabel>
 							<Input
@@ -177,15 +189,17 @@ export default function SugerirMusicaComponent() {
 								onClick={(e) => handleSumbit(e)}
 								w={"full"}
 								mt={8}
-								bg={useColorModeValue("#151f21", "gray.900")}
+								bg={useColorModeValue(
+									"#151f21",
+									"gray.900"
+								)}
 								color={"white"}
 								rounded={"2xl"}
 								_hover={{
 									transform: "translateY(-2px)",
 									boxShadow: "lg",
 									backgroundColor: "#d5b063",
-								}}
-							>
+								}}>
 								Sugerir
 							</Button>
 						</Stack>

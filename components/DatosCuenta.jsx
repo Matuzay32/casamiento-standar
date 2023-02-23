@@ -13,7 +13,10 @@ import { useRouter } from "next/router";
 import { PillPity } from "pill-pity";
 
 export default function DatosCuenta() {
-	const patterFill = useColorModeValue("white", "brand.300");
+	const patterFill = useColorModeValue(
+		"white",
+		"brand.300"
+	);
 
 	const router = useRouter();
 	const refForm = useRef();
@@ -22,41 +25,45 @@ export default function DatosCuenta() {
 		<PillPity
 			position={"relative"}
 			w={"full"}
-			h={"100vh"}
-			// backgroundSize={"cover"}
-			// backgroundPosition={"25% 50%"}
-			// backgroundImage={
-			// 	"url(https://images.unsplash.com/photo-1535185384036-28bbc8035f28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80)"
-			// }
+			h={"auto"}
+			backgroundSize={"cover"}
+			backgroundPosition={"25% 50%"}
+			backgroundImage={
+				"url(https://images.unsplash.com/photo-1521478706270-f2e33c203d95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)"
+			}
 			pattern={"architect"}
 			patternFill={patterFill}
 			patOpacity={0.5}
 			bgColor={300}
-			as={Box}
-		>
+			as={Box}>
 			<Container
 				as={SimpleGrid}
 				maxW={"7xl"}
 				columns={{ base: 1, md: 2 }}
 				spacing={{ base: 10, lg: 32 }}
-				py={{ base: 10, sm: 20, lg: 32 }}
-			>
+				py={{ base: 10, sm: 20, lg: 32 }}>
 				<Stack spacing={{ base: 10, md: 20 }}>
 					<Heading
 						color={1900}
 						lineHeight={1.1}
-						fontSize={{ base: "3xl", sm: "4xl", md: "5xl", lg: "6xl" }}
-					></Heading>
+						fontSize={{
+							base: "3xl",
+							sm: "4xl",
+							md: "5xl",
+							lg: "6xl",
+						}}></Heading>
 
-					<Stack direction={"row"} spacing={4} align={"center"}></Stack>
+					<Stack
+						direction={"row"}
+						spacing={4}
+						align={"center"}></Stack>
 				</Stack>
 				<Stack
 					bg={"gray.50"}
 					rounded={"xl"}
 					p={{ base: 4, sm: 6, md: 8 }}
 					spacing={{ base: 8 }}
-					maxW={{ lg: "lg" }}
-				>
+					maxW={{ lg: "lg" }}>
 					<Stack spacing={4}>
 						<Heading
 							fontSize={"4xl"}
@@ -65,7 +72,10 @@ export default function DatosCuenta() {
 							fontFamily={"body"}
 							width={"100%"}
 							mb={"1rem"}
-							borderBottomWidth={{ base: "2px", md: "2px" }}
+							borderBottomWidth={{
+								base: "2px",
+								md: "2px",
+							}}
 							lineHeight={1.1}
 							// fontSize={{ base: "2xl", sm: "3xl", md: "4xl" }}
 						>
@@ -84,8 +94,7 @@ export default function DatosCuenta() {
 								fontFamily={"body"}
 								width={"100%"}
 								mb={"1rem"}
-								lineHeight={1.1}
-							>
+								lineHeight={1.1}>
 								Banco Santander{" "}
 							</Text>
 
@@ -96,8 +105,7 @@ export default function DatosCuenta() {
 								fontFamily={"body"}
 								width={"100%"}
 								mb={"1rem"}
-								lineHeight={1.1}
-							>
+								lineHeight={1.1}>
 								Número de cuenta:{" "}
 								<Text
 									fontSize={"md"}
@@ -107,8 +115,7 @@ export default function DatosCuenta() {
 									width={"100%"}
 									mb={"1rem"}
 									lineHeight={1.1}
-									as={"span"}
-								>
+									as={"span"}>
 									Cuentas en Pesos 100-371669/2
 								</Text>
 							</Text>
@@ -120,8 +127,7 @@ export default function DatosCuenta() {
 								fontFamily={"body"}
 								width={"100%"}
 								mb={"1rem"}
-								lineHeight={1.1}
-							>
+								lineHeight={1.1}>
 								Número de CBU:{" "}
 								<Text
 									fontSize={"md"}
@@ -131,8 +137,7 @@ export default function DatosCuenta() {
 									width={"100%"}
 									mb={"1rem"}
 									lineHeight={1.1}
-									as={"span"}
-								>
+									as={"span"}>
 									0720100088000037166922
 								</Text>
 							</Text>
@@ -144,8 +149,7 @@ export default function DatosCuenta() {
 								fontFamily={"body"}
 								width={"100%"}
 								mb={"1rem"}
-								lineHeight={1.1}
-							>
+								lineHeight={1.1}>
 								Alias:{" "}
 								<Text
 									fontSize={"md"}
@@ -155,8 +159,7 @@ export default function DatosCuenta() {
 									width={"100%"}
 									mb={"1rem"}
 									lineHeight={1.1}
-									as={"span"}
-								>
+									as={"span"}>
 									maru.magno
 								</Text>
 							</Text>
@@ -168,8 +171,7 @@ export default function DatosCuenta() {
 								fontFamily={"body"}
 								width={"100%"}
 								mb={"1rem"}
-								lineHeight={1.1}
-							>
+								lineHeight={1.1}>
 								Titular de la cuenta:{" "}
 								<Text
 									fontSize={"md"}
@@ -179,8 +181,7 @@ export default function DatosCuenta() {
 									width={"100%"}
 									mb={"1rem"}
 									lineHeight={1.1}
-									as={"span"}
-								>
+									as={"span"}>
 									Magno Maria
 								</Text>
 							</Text>
@@ -192,8 +193,7 @@ export default function DatosCuenta() {
 								fontFamily={"body"}
 								width={"100%"}
 								mb={"1rem"}
-								lineHeight={1.1}
-							>
+								lineHeight={1.1}>
 								Documento:{" "}
 								<Text
 									fontSize={"md"}
@@ -203,8 +203,7 @@ export default function DatosCuenta() {
 									width={"100%"}
 									mb={"1rem"}
 									lineHeight={1.1}
-									as={"span"}
-								>
+									as={"span"}>
 									DNI - 30821389
 								</Text>
 							</Text>
