@@ -34,7 +34,7 @@ export default function Home() {
 	const [hora, setHora] = useState("");
 	const [targetas, setTargetas] = useState();
 	const [fotoCentral, setFotoCentral] = useState(
-		"images/fotoCentral.jpeg"
+		"images/fotoCentral.jpg"
 	);
 	const [posY, setPosY] = useState("50%");
 	const patterFill = useColorModeValue("100", "brand.300");
