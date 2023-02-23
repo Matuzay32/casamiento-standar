@@ -1,0 +1,44 @@
+html {
+	scroll-behavior: smooth;
+}
+.corazon {
+	animation: corazonAnim 10s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+.mariaLucho {
+	animation: mariaLuchoAnim 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* Animaciones */
+@keyframes corazonAnim {
+	10% {
+		width: 50px;
+		height: 50px;
+	}
+	50% {
+		width: 5px;
+		height: 5px;
+		border: 5px solid #deb887;
+		border-radius: 50%;
+		margin: 10px;
+		padding: 10px;
+		transform: rotate(360deg) skewY(5deg);
+	}
+
+	100% {
+		width: 80px;
+		height: 80px;
+		border: 5px solid #deb887;
+		border-radius: 50%;
+		margin: 10px;
+		padding: 10px;
+		transform: rotate(360deg);
+	}
+}
+@keyframes mariaLuchoAnim {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
