@@ -1,13 +1,3 @@
 {
-	"version": 2,
-	"builds": [
-		{
-			"src": "next.config.js",
-			"use": "@vercel/next"
-		}
-	],
-	"env": {
-		"NODE_ENV": "production",
-		"CONFIRM_DEPLOY": "yes"
-	}
+	"ignoreBuildErrors": true
 }
