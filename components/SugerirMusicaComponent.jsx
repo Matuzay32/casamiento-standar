@@ -93,6 +93,7 @@ export default function SugerirMusicaComponent() {
 			position={"relative"}
 			w={"full"}
 			h={"auto"}
+			minH={"100vh"}
 			backgroundSize={"cover"}
 			backgroundPosition={"25% 50%"}
 			backgroundImage={
